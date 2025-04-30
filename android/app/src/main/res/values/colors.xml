@@ -1,0 +1,5 @@
+<resources>
+  <!-- use #RRGGBB or #AARRGGBB — no “0x” prefix -->
+  <color name="launcher_background">#FFD83A88</color>
+
+</resources>
