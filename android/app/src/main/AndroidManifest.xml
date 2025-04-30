@@ -20,8 +20,8 @@
             </intent-filter>
         </activity-alias>
 
-        <!-- Alternative icon activity alias -->
-        <activity-alias android:name=".AlternativeIconActivity" android:enabled="false" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_secondary" android:targetActivity=".MainActivity" android:exported="true">
+        <!-- Secondary icon activity alias -->
+        <activity-alias android:name=".SecondaryIconActivity" android:enabled="false" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_secondary" android:targetActivity=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

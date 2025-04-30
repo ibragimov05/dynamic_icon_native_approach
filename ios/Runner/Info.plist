@@ -8,6 +8,34 @@
 		<string>Dynamic Icon Native Approach</string>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
+		<key>CFBundleIcons</key>
+		<dict>
+			<key>CFBundleAlternateIcons</key>
+			<dict>
+				<key>Icon-App-Secondary</key>
+				<dict>
+					<key>CFBundleIconFiles</key>
+					<array>
+						<string>Icon-App-Secondary</string>
+					</array>
+					<key>CFBundleIconName</key>
+					<string>AppIconSecondary</string>
+					<key>UIPrerenderedIcon</key>
+					<false/>
+				</dict>
+			</dict>
+			<key>CFBundlePrimaryIcon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Icon-App</string>
+				</array>
+				<key>CFBundleIconName</key>
+				<string>AppIcon</string>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+		</dict>
 		<key>CFBundleIdentifier</key>
 		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 		<key>CFBundleInfoDictionaryVersion</key>

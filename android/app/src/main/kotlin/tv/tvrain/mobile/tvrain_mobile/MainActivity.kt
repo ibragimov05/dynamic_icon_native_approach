@@ -33,7 +33,7 @@ class MainActivity: FlutterActivity() {
 
             // Handle activity aliases
             val mainIconAlias = ComponentName(packageName, "$packageName.MainIconActivity")
-            val altIconAlias = ComponentName(packageName, "$packageName.AlternativeIconActivity")
+            val altIconAlias = ComponentName(packageName, "$packageName.SecondaryIconActivity")
 
             when (iconName) {
                 "main" -> {
@@ -56,8 +56,8 @@ class MainActivity: FlutterActivity() {
                         PackageManager.DONT_KILL_APP
                     )
                 }
-                "alternative" -> {
-                    // For alternative icon, disable MainActivity and main icon alias
+                "secondary" -> {
+                    // For secondary icon, disable MainActivity and main icon alias
                     packageManager.setComponentEnabledSetting(
                         mainActivity,
                         PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
@@ -69,7 +69,7 @@ class MainActivity: FlutterActivity() {
                         PackageManager.DONT_KILL_APP
                     )
 
-                    // Enable alternative icon alias
+                    // Enable secondary icon alias
                     packageManager.setComponentEnabledSetting(
                         altIconAlias,
                         PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
